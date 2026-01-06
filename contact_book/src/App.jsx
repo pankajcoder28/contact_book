@@ -7,7 +7,7 @@ const App = () => {
   const [userrole, setuserrole] = useState('')
   const [userdes, setuserdes] = useState('')
 
-  const localdata = JSON.parse(localStorage.getItem('all-user')) 
+  const localdata = JSON.parse(localStorage.getItem('all-user')) || []
   const [allusers, setallusers] = useState(localdata)
   let submitted = (e)=>{
     e.preventDefault()
